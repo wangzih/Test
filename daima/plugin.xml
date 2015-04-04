@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+    <extension
+          point="org.eclipse.ui.newWizards">
+       <category
+             name="代码生成"
+             id="com.hymake.hyplat.hycodegen">
+       </category>
+       <wizard
+             name="生成一个空项目"
+             icon="icons/1.gif"
+             category="com.hymake.hyplat.hycodegen"
+             class="daima.wizards.SampleNewWizardPage"
+             id="com.hymake.hyplat.hycodegen.wizard.new.project"
+             project="true" >
+          <description>
+             通过向导生成一个代码生成项目框架
+          </description>
+          <selection
+                class="org.eclipse.core.resources.IResource">
+          </selection>
+       </wizard>
+    </extension>
+
+
+</plugin>
